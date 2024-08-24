@@ -47,6 +47,19 @@ class Product(Base):
         res += f"Age Group: {self.age_group}\n"
         res += f"Sizes: {', '.join(self.sizes)}\n"
         return res
+    
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "description": self.description,
+            "category": self.category,
+            "price": self.price,
+            "currency": self.currency,
+            "available_stock": self.available_stock,
+            "rating": self.rating,
+            "age_group": self.age_group,
+            "sizes": self.sizes,
+        }
 
     @staticmethod
     def get_text_search_field():

@@ -4,378 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Tester</title>
+    <title>AI Product Search</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/tailwindcss-animate.min.css" rel="stylesheet">
+    <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #ai-response {
+            animation: slideIn 0.6s ease forwards;
+        }
+
+        #product-grid > div {
+            animation: slideIn 0.6s ease forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #product-grid > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 255, 127, 0.3);
+        }
+
+        #product-grid img {
+            transition: transform 0.3s ease;
+        }
+
+        #product-grid img:hover {
+            transform: scale(1.07);
+        }
+
+        .loader {
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            border-top: 4px solid #00ff00;
+            width: 36px;
+            height: 36px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
-<style>
-    .ripple {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: rgba(151, 226, 178, 0.7);
-        animation: rippleAnimation 1s infinite ease-out;
-        display: none;
-    }
 
-    @keyframes rippleAnimation {
-        0% {
-            transform: scale(0.5);
-            opacity: 0.7;
-        }
+<body class="bg-gradient-to-b from-gray-800 to-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-6">
 
-        100% {
-            transform: scale(2.5);
-            opacity: 0;
-        }
-    }
+    <h1 class="text-4xl font-extrabold text-green-400 mb-12">Postgres Hybrid Search</h1>
 
-    @keyframes float {
-
-        0%,
-        100% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-20px);
-        }
-    }
-
-    .floating {
-        animation: float 6s ease-in-out infinite;
-    }
-
-    .neon-circle {
-        background: radial-gradient(circle at 50%, #095562 0%, #12889d 70%, #0a6e8d 100%);
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        box-shadow: 0 4px 15px rgba(50, 255, 126, 0.4);
-        z-index: 1000;
-    }
-
-    .neon-circle:hover {
-        transform: scale(1.1);
-        box-shadow: 0 8px 25px rgba(50, 248, 255, 0.8);
-        cursor: pointer;
-    }
-
-    #send-button {
-        background-color: #095562;
-        color: white;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 8px;
-        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-        cursor: pointer;
-        outline: none;
-    }
-
-    #send-button:hover {
-        background-color: #12889d;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 10px rgba(50, 248, 255, 0.8);
-    }
-
-    #send-button:active {
-        transform: translateY(1px);
-        box-shadow: 0 3px 5px rgba(50, 248, 255, 0.6);
-    }
-
-    #message-input {
-        color: #fff;
-        border-radius: 8px;
-        padding: 10px;
-        font-size: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        resize: none;
-        transition: all 0.3s ease-in-out;
-    }
-
-    #message-input:focus {
-        outline: none;
-        border-color: #12889d;
-        box-shadow: 0 0 8px rgba(50, 248, 255, 0.75);
-    }
-
-    #message-input::placeholder {
-        color: rgba(255, 255, 255, 0.5);
-    }
-
-    #chat-box {
-        padding: 8px;
-        border-radius: 5px;
-        margin-bottom: 16px;
-        overflow-y: auto;
-        color: #00ff00;
-        font-family: 'Consolas', 'Courier New', monospace;
-    }
-
-    strong {
-        color: #ffffff;
-    }
-</style>
-
-<body class="bg-gray-900 text-white p-6">
-    <div class="container mx-auto">
-        <h1 class="text-4xl text-center font-bold mb-6">Product Recommender</h1>
-        <div class="grid gap-4 mb-4 grid-cols-7">
-            <div class="col-span-3">
-                <label for="voice-select" class="block text-sm font-medium text-gray-200">Select Voice:</label>
-                <select id="voice-select"
-                    class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md">
-                    <option value="" disabled selected>Select a Voice</option>
-                </select>
-            </div>
-            <div class="col-span-2">
-                <label for="rate" class="block text-sm font-medium text-gray-200">Rate:</label>
-                <input type="range" id="rate" name="rate" min="0.1" max="10" step="0.1" value="1"
-                    class="mt-1 block w-full pl-3 pr-10 py-2">
-            </div>
-            <div class="col-span-2">
-                <label for="pitch" class="block text-sm font-medium text-gray-200">Pitch:</label>
-                <input type="range" id="pitch" name="pitch" min="0" max="2" step="0.1"
-                    class="mt-1 block w-full pl-3 pr-10 py-2">
-            </div>
-        </div>
-
-        <div id="chat-window">
-            <div id="chat-box" class="border border-gray-700 p-4 rounded-md mb-4 h-96 overflow-y-auto bg-gray-800">
-            </div>
-            <div class="flex items-center">
-                <div class="mic-container mr-2">
-                    <div class="text-center flex w-full items-center justify-center">
-                        <div id="mic-button"
-                            class="rounded-full p-10 flex justify-center items-center floating neon-circle">
-                            <svg id="mic-on" fill="white" height="25px" width="25px" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
-                                <g>
-                                    <g>
-                                        <path
-                                            d="m439.5,236c0-11.3-9.1-20.4-20.4-20.4s-20.4,9.1-20.4,20.4c0,70-64,126.9-142.7,126.9-78.7,0-142.7-56.9-142.7-126.9 0-11.3-9.1-20.4-20.4-20.4s-20.4,9.1-20.4,20.4c0,86.2 71.5,157.4 163.1,166.7v57.5h-23.6c-11.3,0-20.4,9.1-20.4,20.4 0,11.3 9.1,20.4 20.4,20.4h88c11.3,0 20.4-9.1 20.4-20.4 0-11.3-9.1-20.4-20.4-20.4h-23.6v-57.5c91.6-9.3 163.1-80.5 163.1-166.7z" />
-                                        <path
-                                            d="m256,323.5c51,0 92.3-41.3 92.3-92.3v-127.9c0-51-41.3-92.3-92.3-92.3s-92.3,41.3-92.3,92.3v127.9c0,51 41.3,92.3 92.3,92.3zm-52.3-220.2c0-28.8 23.5-52.3 52.3-52.3s52.3,23.5 52.3,52.3v127.9c0,28.8-23.5,52.3-52.3,52.3s-52.3-23.5-52.3-52.3v-127.9z" />
-                                    </g>
-                                </g>
-                            </svg>
-
-                            <svg id="mic-off" class="hidden" fill="white" width="25px" height="25px"
-                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                <title>ionicons-v5-g</title>
-                                <line x1="432" y1="400" x2="96" y2="64"
-                                    style="fill:none;stroke:white;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" />
-                                <path
-                                    d="M400,240V208.45c0-8.61-6.62-16-15.23-16.43A16,16,0,0,0,368,208v32a111.68,111.68,0,0,1-2.68,24.38,2,2,0,0,0,.53,1.84l22.59,22.59a2,2,0,0,0,3.29-.72A143.27,143.27,0,0,0,400,240Z" />
-                                <path
-                                    d="M256,352A112.36,112.36,0,0,1,144,240V208.45c0-8.61-6.62-16-15.23-16.43A16,16,0,0,0,112,208v32c0,74,56.1,135.12,128,143.11V432H192.45c-8.61,0-16,6.62-16.43,15.23A16,16,0,0,0,192,464H319.55c8.61,0,16-6.62,16.43-15.23A16,16,0,0,0,320,432H272V383.11a143.08,143.08,0,0,0,52-16.22,4,4,0,0,0,.91-6.35l-18.4-18.39a3,3,0,0,0-3.41-.58A111,111,0,0,1,256,352Z" />
-                                <path
-                                    d="M257.14,48a79.66,79.66,0,0,0-68.47,36.57,4,4,0,0,0,.54,5L332.59,233a2,2,0,0,0,3.41-1.42V128.91C336,85,301,48.6,257.14,48Z" />
-                                <path
-                                    d="M179.41,215a2,2,0,0,0-3.41,1.42V239a80.89,80.89,0,0,0,23.45,56.9,78.55,78.55,0,0,0,77.8,21.19,2,2,0,0,0,.86-3.35Z" />
-                            </svg>
-                        </div>
-                        <div class="ripple ripple1"></div>
-                        <div class="ripple ripple2"></div>
-                        <div class="ripple ripple3"></div>
-                    </div>
-                </div>
-                <textarea type="text" id="message-input"
-                    class="border border-gray-700 flex-grow rounded-md sm:text-sm mr-2 p-2 bg-gray-800 text-white"
-                    placeholder="Type your message"></textarea>
-                <button id="send-button" class="ml-2 px-4 py-2 bg-green-600 text-white rounded-md">Send</button>
-            </div>
+    <div class="w-full max-w-2xl mb-10">
+        <div class="relative">
+            <input id="search-input" type="text"
+                class="w-full py-4 px-6 rounded-full bg-gray-800 text-lg text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-green-500 focus:border-green-500"
+                placeholder="Search for products...">
+            <button id="search-button"
+                class="absolute right-0 top-2 mr-3 bg-green-600 hover:bg-green-500 text-white rounded-full p-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 1 0-14 0 7 7 0 0 0 14 0z"></path>
+                </svg>
+            </button>
         </div>
     </div>
 
+    <div id="ai-response" class="w-full max-w-2xl mb-10 text-center text-lg text-green-400 leading-relaxed">
+    </div>
+
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        const chatWindow = document.getElementById('chat-window');
-        const chatBox = document.getElementById('chat-box');
-        const messageInput = document.getElementById('message-input');
-        const micButton = document.getElementById('mic-button');
-        const sendButton = document.getElementById('send-button');
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const aiResponse = document.getElementById('ai-response');
+        const productGrid = document.getElementById('product-grid');
 
+        searchButton.addEventListener('click', async () => {
+            const query = searchInput.value.trim();
+            if (query) {
+                aiResponse.innerHTML = '<div class="loader mx-auto"></div>';
+                productGrid.innerHTML = '';
 
-        sendButton.addEventListener('click', async () => {
-            const message = messageInput.value.trim();
-            if (message) {
-                appendMessage('🗣️ user', message);
-                messageInput.value = '';
-                messageInput.focus();
-                await sendMessage(message);
+                await fetchAIResponse(query);
             }
         });
 
-        messageInput.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' && !e.shiftKey) {
-                e.preventDefault();
-                sendButton.click();
-            }
-        });
-
-        function getJson(s) {
-            s = s.slice(s.search(/[\[{]/));
+        async function fetchAIResponse(query) {
             try {
-                return JSON.parse(s);
-            } catch (e) {
-                return JSON.parse(s.slice(0, e.message.match(/position (\d+)/)[1]));
-            }
-        }
+                const response = await axios.post('/chat', {
+                    query: query
+                });
 
-        let isRecording = false;
-        let recognition;
-        let finalTranscript = '';
-        let noSpeechTimer;
-        let sendLatency = 5000;
-        micButton.addEventListener('click', () => {
-            if (!isRecording) {
-                startRecognition();
-            } else {
-                stopRecognition();
-            }
-        });
+                if (response.status === 200 && response.data) {
+                    const aiText = response.data.response;
+                    const products = response.data.product_recommendations || [];
 
-        function startRecognition() {
-            // delete any speach synthesis that is currently happening
-            window.speechSynthesis.cancel();
-            isRecording = true;
-            micOn = document.getElementById('mic-on');
-            micOff = document.getElementById('mic-off');
-            micOn.classList.add('hidden');
-            micOff.classList.remove('hidden');
-            document.querySelectorAll('.ripple').forEach(ripple => ripple.style.display = 'block');
-            sendLatency = document.getElementById('send-latency').value * 1000;
-            recognition = new webkitSpeechRecognition();
-            recognition.interimResults = true;
-            recognition.continuous = true;
+                    aiResponse.textContent = aiText;
 
-            recognition.onresult = (event) => {
-                resetNoSpeechTimer();
-                let interimTranscript = '';
-                for (let i = event.resultIndex; i < event.results.length; ++i) {
-                    if (event.results[i].isFinal) {
-                        finalTranscript += event.results[i][0].transcript;
-                    } else {
-                        interimTranscript += event.results[i][0].transcript;
-                    }
-                }
-                messageInput.value = finalTranscript + interimTranscript;
-            };
-
-            recognition.onend = () => {
-                if (isRecording) recognition.start();
-            };
-
-            recognition.start();
-            resetNoSpeechTimer();
-        }
-
-        function stopRecognition() {
-            isRecording = false;
-            clearTimeout(noSpeechTimer);
-            micOn = document.getElementById('mic-on');
-            micOff = document.getElementById('mic-off');
-            micOn.classList.remove('hidden');
-            micOff.classList.add('hidden');
-            recognition.stop();
-            appendMessage('🗣️ user', finalTranscript);
-            sendMessage(finalTranscript);
-            messageInput.value = '';
-            finalTranscript = '';
-            document.querySelectorAll('.ripple').forEach(ripple => ripple.style.display = 'none');
-        }
-
-
-        function resetNoSpeechTimer() {
-            clearTimeout(noSpeechTimer);
-            // cancel any speech synthesis that is currently happening
-            window.speechSynthesis.cancel();
-            noSpeechTimer = setTimeout(() => {
-                if (isRecording) stopRecognition();
-            }, sendLatency);
-        }
-
-        async function sendMessage(message) {
-            try {
-                const response = await fetch('/chat', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        "query": message,
-                    })
-                })
-
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const newMessage = appendMessage('🤖 ai', '');
-                const m = newMessage.querySelector('.msg');
-                let msgContent = await response.json();
-                msgContent = msgContent.response;
-                m.innerHTML = marked.parse(msgContent.replace(/<flush\/>/g, ''));
-
-                speakText(msgContent);
-            } catch (error) {
-                console.error('Error sending message:', error);
-            }
-        }
-
-        function appendMessage(sender, message) {
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('mb-2');
-            messageElement.style.color = '#00ff00';
-            messageElement.innerHTML = `<strong>${sender}:</strong>\n<p class="msg">${message}</p>`;
-            chatBox.appendChild(messageElement);
-            chatBox.scrollTop = chatBox.scrollHeight;
-            // get the messageElement from chatBox
-            const newMessage = chatBox.children[chatBox.children.length - 1];
-            return newMessage;
-        }
-
-        const synth = window.speechSynthesis;
-        const voiceSelect = document.querySelector("#voice-select");
-
-        let voices;
-
-        function loadVoices() {
-            voices = synth.getVoices();
-            for (let i = 0; i < voices.length; i++) {
-                const option = document.createElement("option");
-                if (voices[i].lang === "en-US") {
-                    option.textContent = `${voices[i].name} (${voices[i].lang})`;
-                    option.value = i;
-                    voiceSelect.appendChild(option);
-                }
-            }
-        }
-
-        if ("onvoiceschanged" in synth) {
-            synth.onvoiceschanged = loadVoices;
-        } else {
-            loadVoices();
-        }
-
-        function speakText(text) {
-            const textParts = text.split("<flush/>");
-            if (text.endsWith("<flush/>")) {
-                if (textParts.length > 1) {
-                    text = textParts[textParts.length - 2];
+                    products.forEach(product => {
+                        const productCard = document.createElement('div');
+                        productCard.className = 'bg-gray-800 p-6 rounded-lg shadow-lg transform hover:-translate-y-2 transition-all duration-300';
+                        productCard.innerHTML = `
+                            <img src="https://picsum.photos/200/300?random=${product.id}" alt="${product.name}" class="w-full h-40 object-cover rounded-md mb-4">
+                            <h3 class="text-lg font-semibold mb-3">${product.name}</h3>
+                            <p class="text-gray-400 text-sm mb-2">${product.description}</p>
+                            <p class="text-green-400 font-bold mb-2">${product.price} ${product.currency}</p>
+                            <p class="text-yellow-400 font-semibold mb-2">Rating: ${product.rating}/5</p>
+                            <p class="text-sm text-gray-400">Category: ${product.category}</p>
+                            <p class="text-sm text-gray-400">Age Group: ${product.age_group}</p>
+                        `;
+                        productGrid.appendChild(productCard);
+                    });
                 } else {
-                    text = textParts[0];
+                    aiResponse.textContent = "No response found. Please try again.";
                 }
-            } else {
-                // get text after last flush
-                text = textParts[textParts.length - 1];
+            } catch (error) {
+                aiResponse.textContent = "Error fetching data. Please try again later.";
+                console.error('Error:', error);
             }
-            const utterance = new SpeechSynthesisUtterance(text.replace(/[.,\/#!$%\^&\*;*:{}=\-_`~()]/g, ""));
-            utterance.voice = voices[voiceSelect.value];
-            utteranceRate = document.getElementById('rate').value;
-            utterance.rate = utteranceRate;
-            utterancePitch = document.getElementById('pitch').value;
-            utterance.pitch = utterancePitch;
-            window.speechSynthesis.speak(utterance);
         }
     </script>
 </body>

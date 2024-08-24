@@ -14,12 +14,14 @@ logger = logging.getLogger(__name__)
 
 PROMPT = """
 You are a customer service representative for an online store.
-You help customers find products they are looking for, and recommend products based on their needs.
+You provide an overview of the products found based on the search query.
+You never tell about the products themselves, only the summary like: `I found 3 products with various sizes and colors for your kid.`
 You must use tool `search_products` to search for products based on the search query.
 
 - Always output well formatted markdown text.
 - Use the `search_products` tool to search for products based on the search query.
 - Keep your answers concise and to the point. Don't overwhelm the user with too much information.
+- Your answer must always show a two liner summary of all the products found.
 """
 
 
@@ -37,7 +39,9 @@ class ChatService:
         """
         This function is used to search products based on the search_query.
         """
+        product_recommendations = []
         response: list[Product] = self.searcher.search_and_embed(search_query)
+        product_recommendations.extend(response)
         if not response:
             return "No products found for the given search query."
         response = "\n".join([i.content for i in response])
@@ -45,7 +49,7 @@ class ChatService:
         return (
             "Retrieved the following products based on your search query:\n"
             f"{response}"
-        )
+        ), product_recommendations
 
     def search_tool_definition(self):
         """
@@ -81,6 +85,7 @@ class ChatService:
             {"role": "system", "content": PROMPT},
             {"role": "user", "content": user_query},
         ]
+        product_recommendations = []
         while True:
             response = self.client.chat.completions.create(
                 model=self.model,
@@ -102,18 +107,20 @@ class ChatService:
                     }
                 )
                 tools_names = [tool_call.function.name for tool_call in tool_calls]
-                logger.info(f"Tools used: {tools_names}")
+                logger.info("Tools used: %s", tools_names)
                 tool_call = tool_calls[0]
                 try:
-                    logger.info(f"Calling tool: {tool_call.function.name}")
+                    logger.info("Calling tool: %s", tool_call.function.name)
                     tool_name = tool_call.function.name
                     tool_args = json.loads(tool_call.function.arguments)
-                    logger.info(f"Tool arguments: {tool_args}")
-                    tool_result = self.search_products(**tool_args)
-                except Exception as e: # pylint: disable=broad-except
+                    logger.info("Tool arguments: %s", tool_args)
+                    tool_result, product_recommendations = self.search_products(
+                        **tool_args
+                    )
+                except Exception as e:  # pylint: disable=broad-except
                     tool_result = str(e)
 
-                logger.info(f"Tool result: {tool_result}")
+                logger.info("Tool result: %s", tool_result)
                 messages.append(
                     {
                         "tool_call_id": tool_call.id,
@@ -125,4 +132,4 @@ class ChatService:
             else:
                 break
 
-        return response_message.content
+        return response_message.content, product_recommendations
