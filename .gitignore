@@ -1,0 +1,13 @@
+# pycache
+**/__pycache__/
+.DS_Store
+
+*.pyc
+
+env
+venv
+
+.vscode
+!.vscode/launch.json
+
+*/data/
