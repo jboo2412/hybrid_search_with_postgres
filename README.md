@@ -48,3 +48,78 @@ Refer to `requirements.txt` for a complete list of dependencies. Key dependencie
 1. Clone the repository
 2. Create and activate a virtual environment
 3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Install PostgreSQL:
+   - For Ubuntu: `sudo apt-get install postgresql`
+   - For macOS: `brew install postgresql`
+   - For Windows: Download and install from the official PostgreSQL website
+
+5. Create a database named `rag_example_schema`:
+   ```
+   psql -U postgres
+   CREATE DATABASE rag_example_schema;
+   ```
+
+6. Enable the vector extension:
+   ```
+   \c rag_example_schema
+   CREATE EXTENSION IF NOT EXISTS vector;
+   \q
+   ```
+
+7. Set up environment variables:
+   Create a `.env` file in the root directory and add the following variables:
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   GROQ_API_KEY=your_groq_api_key
+   DATABASE_NAME=rag_example_schema
+   DATABASE_USER=your_database_user
+   DATABASE_PASSWORD=your_database_password
+   DATABASE_URL=localhost
+   DATABASE_PORT=5432
+   ```
+
+8. Temporarily disable the index in `models/product.py`:
+   Comment out the following lines:
+
+   ```python:models/product.py
+   # index_ada002 = Index(
+   #     "hnsw_index_for_innerproduct_product_embedding_ada002",
+   #     Product.embedding,
+   #     postgresql_using="hnsw",
+   #     postgresql_with={"m": 16, "ef_construction": 64},
+   #     postgresql_ops={"embedding_ada002": "vector_ip_ops"},
+   # )
+   ```
+
+9. Load initial data:
+   ```
+   python scripts/load_data.py
+   ```
+
+10. Re-enable the index in `models/product.py`:
+    Uncomment the lines you commented in step 8:
+
+    ```python:models/product.py
+    index_ada002 = Index(
+        "hnsw_index_for_innerproduct_product_embedding_ada002",
+        Product.embedding,
+        postgresql_using="hnsw",
+        postgresql_with={"m": 16, "ef_construction": 64},
+        postgresql_ops={"embedding_ada002": "vector_ip_ops"},
+    )
+    ```
+
+11. Run the application:
+    ```
+    uvicorn main:app --reload
+    ```
+
+Your application should now be running at `http://localhost:8000`.
+
+### Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your changes.
