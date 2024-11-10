@@ -24,41 +24,74 @@ from models import Base
 class Product(Base):
     __tablename__ = "Product"
     id = Column(Integer, primary_key=True)
-    name = Column(String)
-    description = Column(String)
-    category = Column(String)
-    price = Column(Integer)
-    currency = Column(String)
-    available_stock = Column(Integer)
-    rating = Column(Integer)
-    age_group = Column(String)
-    sizes = Column(ARRAY(String))
+    nom = Column(Text, nullable=False)
+    description = Column(Text)
+    categorie = Column(Text)
+    prix = Column(Numeric)
+    sourceImage = Column(Text)
+    longueur = Column(Numeric)
+    largeur = Column(Numeric)
+    hauteur = Column(Numeric)
+    unite = Column(Text)
+    poids = Column(Text)
+    materiau = Column(Text)
+    couleur = Column(Text)
+    marque = Column(Text)
+    stock = Column(Integer)
+    disponibilite = Column(Text)
+    livraisonEstimee = Column(Text)
+    garantie = Column(Text)
+    produitsAssocies = Column(ARRAY(Integer))
+    tags = Column(ARRAY(Text))
+    designer = Column(Text)
     embedding = Column(Vector(1536))
     content = Column(Text)
     created_at= Column(DateTime, default=datetime.datetime.utcnow)
 
     def to_str(self):
-        res = f"Product: {self.name}\n"
+        res = f"Produit: {self.nom}\n"
         res += f"Description: {self.description}\n"
-        res += f"Category: {self.category}\n"
-        res += f"Price: {self.price} {self.currency}\n"
-        res += f"Available Stock: {self.available_stock}\n"
-        res += f"Rating: {self.rating}\n"
-        res += f"Age Group: {self.age_group}\n"
-        res += f"Sizes: {', '.join(self.sizes)}\n"
+        res += f"Catégorie: {self.categorie}\n"
+        res += f"Prix: {self.prix} €\n"
+        res += f"Dimensions (L x l x h): {self.longueur} x {self.largeur} x {self.hauteur} {self.unite}\n"
+        res += f"Poids: {self.poids}\n"
+        res += f"Matériau: {self.materiau}\n"
+        res += f"Couleur: {self.couleur}\n"
+        res += f"Marque: {self.marque}\n"
+        res += f"Stock: {self.stock}\n"
+        res += f"Disponibilité: {self.disponibilite}\n"
+        res += f"Livraison Estimée: {self.livraisonEstimee}\n"
+        res += f"Garantie: {self.garantie}\n"
+        res += f"Designer: {self.designer}\n"
+        res += f"Tags: {', '.join(self.tags) if self.tags else ''}\n"
+        res += f"Produits Associés: {', '.join(map(str, self.produitsAssocies)) if self.produitsAssocies else ''}\n"
         return res
     
     def to_dict(self):
         return {
-            "name": self.name,
+           "id": self.id,
+            "nom": self.nom,
             "description": self.description,
-            "category": self.category,
-            "price": self.price,
-            "currency": self.currency,
-            "available_stock": self.available_stock,
-            "rating": self.rating,
-            "age_group": self.age_group,
-            "sizes": self.sizes,
+            "categorie": self.categorie,
+            "prix": self.prix,
+            "sourceImage": self.sourceImage,
+            "dimensions": {
+                "longueur": self.longueur,
+                "largeur": self.largeur,
+                "hauteur": self.hauteur,
+                "unite": self.unite,
+            },
+            "poids": self.poids,
+            "materiau": self.materiau,
+            "couleur": self.couleur,
+            "marque": self.marque,
+            "stock": self.stock,
+            "disponibilite": self.disponibilite,
+            "livraisonEstimee": self.livraisonEstimee,
+            "garantie": self.garantie,
+            "produitsAssocies": self.produitsAssocies,
+            "tags": self.tags,
+            "designer": self.designer
         }
 
     @staticmethod
