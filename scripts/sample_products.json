@@ -1,3 +1,4 @@
+[
 {
   "products": 
   {
@@ -31,7 +32,7 @@
       "confortable"
     ],
     "designer": "Bloomingville"
-  },
+  }},
   {
     "id": 2,
     "nom": "Fauteuil rembourré About A Chair AAC23",
@@ -1857,5 +1858,5 @@
     ],
     "designer": "NV Gallery"
   }
+
 ]
-}
