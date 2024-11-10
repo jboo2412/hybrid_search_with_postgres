@@ -67,8 +67,8 @@ class ChatService:
                             "type": "string",
                             "description": (
                                 "The search query to search the products.\n"
-                                "eg: 'shoes for kids with size 5' or "
-                                "summer wear for kids"
+                                "eg: 'blue sofa under 100 euros' or "
+                                "design chair for desktop"
                             ),
                         },
                     },
