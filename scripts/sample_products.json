@@ -1,334 +1,1861 @@
 {
-  "products": [
-    {
-      "name": "Rainbow Unicorn T-Shirt",
-      "description": "A colorful t-shirt with a unicorn print, suitable for casual wear.",
-      "category": "Summer Wear",
-      "price": 12.99,
-      "currency": "USD",
-      "available_stock": 150,
-      "rating": 4.8,
-      "age_group": "3-6",
-      "sizes": ["XS", "S", "M"]
+  "products": 
+  {
+    "id": 1,
+    "nom": "Canapé de Jardin 2 Places Pavone",
+    "description": "Canapé de jardin 2 places Pavone par Bloomingville, en métal beige avec assise en corde tissée en polyester. Design élégant et confortable pour un extérieur moderne.",
+    "categorie": "Canapés",
+    "prix": 599.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/4/1/canape-de-jardin-2-places-pavone-beige-coussins-beige_madeindesign_422039_original.jpg",
+    "dimensions": {
+      "longueur": 174,
+      "largeur": 80,
+      "hauteur": 80,
+      "unite": "cm"
     },
-    {
-      "name": "Dinosaur Hoodie",
-      "description": "Warm and cozy hoodie with a fun dinosaur graphic, perfect for chilly weather.",
-      "category": "Winter Wear",
-      "price": 24.99,
-      "currency": "USD",
-      "available_stock": 100,
-      "rating": 4.7,
-      "age_group": "4-8",
-      "sizes": ["S", "M", "L"]
+    "poids": "N/A",
+    "materiau": "Métal, Corde en Polyester",
+    "couleur": "Beige",
+    "marque": "Bloomingville",
+    "stock": 2,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "4-6 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      3,
+      4
+    ],
+    "tags": [
+      "jardin",
+      "moderne",
+      "confortable"
+    ],
+    "designer": "Bloomingville"
+  },
+  {
+    "id": 2,
+    "nom": "Fauteuil rembourré About A Chair AAC23",
+    "description": "Fauteuil rembourré avec tissu gris, structure en bois naturel. Design épuré et confortable, idéal pour les espaces modernes. Le fauteuil est entièrement recouvert de tissu, avec des pieds en chêne verni mat.",
+    "categorie": "Fauteuils",
+    "prix": 569.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/f/0/fauteuil-rembourre-about-a-chair-aac23-gris-clair-remix-123-chene-verni-mat_madeindesign_324518_original.jpg",
+    "dimensions": {
+      "longueur": 59,
+      "largeur": 52,
+      "hauteur": 79,
+      "unite": "cm"
     },
-    {
-      "name": "Floral Summer Dress",
-      "description": "Lightweight floral dress for sunny days, great for parties or casual outings.",
-      "category": "Summer Wear",
-      "price": 18.0,
-      "currency": "USD",
-      "available_stock": 200,
-      "rating": 4.5,
-      "age_group": "5-10",
-      "sizes": ["M", "L", "XL"]
+    "poids": {
+      "valeur": 10,
+      "unite": "kg"
     },
-    {
-      "name": "Polar Bear Sweater",
-      "description": "Cute sweater featuring a polar bear design, ideal for winter months.",
-      "category": "Winter Wear",
-      "price": 22.5,
-      "currency": "USD",
-      "available_stock": 85,
-      "rating": 4.6,
-      "age_group": "3-7",
-      "sizes": ["XS", "S", "M"]
+    "materiau": "Chêne verni mat, Tissu",
+    "couleur": "Gris, Bois naturel",
+    "marque": "Hay",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "4-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      3,
+      8,
+      12
+    ],
+    "tags": [
+      "moderne",
+      "confortable",
+      "design scandinave"
+    ],
+    "designer": "Hee Welling"
+  },
+  {
+    "id": 3,
+    "nom": "Bureau Kaari",
+    "description": "Bureau en bois noir avec finition HPL. Design élégant et moderne, avec une longueur de 150 cm, une profondeur de 65 cm et une hauteur de 75 cm. Conçu par les designers Ronan & Erwan Bouroullec pour Artek.",
+    "categorie": "Bureaux",
+    "prix": 1095.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/2/9/bureau-kaari-hpl-noir-brillant-chene-noir_madeindesign_424776_original.jpg",
+    "dimensions": {
+      "longueur": 150,
+      "largeur": 65,
+      "hauteur": 75,
+      "unite": "cm"
     },
-    {
-      "name": "Striped Shorts",
-      "description": "Comfortable cotton shorts with a striped pattern, great for summer play.",
-      "category": "Summer Wear",
-      "price": 8.99,
-      "currency": "USD",
-      "available_stock": 175,
-      "rating": 4.4,
-      "age_group": "4-9",
-      "sizes": ["S", "M", "L"]
+    "poids": {
+      "valeur": 32,
+      "unite": "kg"
     },
-    {
-      "name": "Fleece-Lined Jacket",
-      "description": "Insulated jacket with fleece lining for extra warmth during winter.",
-      "category": "Winter Wear",
-      "price": 39.99,
-      "currency": "USD",
-      "available_stock": 62,
-      "rating": 4.9,
-      "age_group": "6-12",
-      "sizes": ["M", "L", "XL"]
+    "materiau": "Bois, HPL",
+    "couleur": "Noir",
+    "marque": "Artek",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      3,
+      7,
+      12
+    ],
+    "tags": [
+      "moderne",
+      "bois",
+      "design"
+    ],
+    "designer": "Ronan & Erwan Bouroullec"
+  },
+  {
+    "id": 4,
+    "nom": "Table à rallonge Bevel",
+    "description": "Table ronde extensible en bois naturel, dotée de deux rallonges. Parfaite pour les grands dîners ou les petits espaces, elle peut être ajustée selon vos besoins. Fabriquée en hêtre massif, cette table combine design élégant et fonctionnalité, signature de la marque Ferm Living.",
+    "categorie": "Tables",
+    "prix": 2229.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/c/d/table-a-rallonge-bevel-217-x-117-cm_madeindesign_416002_original.jpg",
+    "dimensions": {
+      "longueur": 217,
+      "largeur": 117,
+      "hauteur": 73,
+      "unite": "cm"
     },
-    {
-      "name": "Character Pajama Set",
-      "description": "Set of pajamas featuring popular cartoon characters, perfect for sleepovers.",
-      "category": "Sleepwear",
-      "price": 15.99,
-      "currency": "USD",
-      "available_stock": 140,
-      "rating": 4.8,
-      "age_group": "5-10",
-      "sizes": ["M", "L", "XL"]
+    "poids": {
+      "valeur": 64,
+      "unite": "kg"
     },
-    {
-      "name": "Ruffled Tank Top",
-      "description": "Stylish tank top with ruffles, perfect for summer holidays.",
-      "category": "Summer Wear",
-      "price": 9.49,
-      "currency": "USD",
-      "available_stock": 190,
-      "rating": 4.3,
-      "age_group": "4-8",
-      "sizes": ["XS", "S", "M"]
+    "materiau": "Hêtre massif",
+    "couleur": "Bois naturel",
+    "marque": "Ferm Living",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "extensible",
+      "bois",
+      "design",
+      "scandinave"
+    ],
+    "designer": "Ferm Living"
+  },
+  {
+    "id": 5,
+    "nom": "Canapé droit Atlas",
+    "description": "Canapé droit 3 places en tissu vert, au design épuré et élégant. Le canapé Atlas de Kann Design allie confort et style grâce à son assise moelleuse et son revêtement en tissu de qualité. Idéal pour apporter une touche de modernité à votre salon.",
+    "categorie": "Canapés",
+    "prix": 1999.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/c/0/canape-droit-atlas-kaki_madeindesign_422255_original.jpg",
+    "dimensions": {
+      "longueur": 203,
+      "largeur": 94,
+      "hauteur": 78,
+      "unite": "cm"
     },
-    {
-      "name": "Woolen Beanie",
-      "description": "Soft woolen beanie to keep little ones warm in cold weather.",
-      "category": "Accessories",
-      "price": 5.99,
-      "currency": "USD",
-      "available_stock": 220,
-      "rating": 4.7,
-      "age_group": "3-12",
-      "sizes": ["One Size"]
+    "poids": {
+      "valeur": 47,
+      "unite": "kg"
     },
-    {
-      "name": "Cargo Pants",
-      "description": "Durable cargo pants with plenty of pockets, ideal for outdoor adventures.",
-      "category": "Winter Wear",
-      "price": 17.99,
-      "currency": "USD",
-      "available_stock": 130,
-      "rating": 4.5,
-      "age_group": "6-12",
-      "sizes": ["M", "L", "XL"]
+    "materiau": "Tissu, Bois, Métal",
+    "couleur": "Vert",
+    "marque": "Kann Design",
+    "stock": 8,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "10-15 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      6,
+      8,
+      9
+    ],
+    "tags": [
+      "canapé",
+      "tissu",
+      "moderne",
+      "vert"
+    ],
+    "designer": "Kann Design"
+  },
+  {
+    "id": 6,
+    "nom": "Canapé droit Rico",
+    "description": "Canapé droit 4 places en tissu blanc, offrant un design doux et arrondi pour un confort optimal. Le canapé Rico de Ferm Living se distingue par son esthétique enveloppante et son revêtement en tissu polyester de haute qualité. Parfait pour un salon contemporain et élégant.",
+    "categorie": "Canapés",
+    "prix": 3699.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/e/c/canape-droit-rico-blanc-casse_madeindesign_338859_original.jpg",
+    "dimensions": {
+      "longueur": 260,
+      "largeur": 81.5,
+      "hauteur": 79,
+      "unite": "cm"
     },
-    {
-      "name": "Graphic T-Shirt",
-      "description": "Casual t-shirt with cool graphics, perfect for everyday wear.",
-      "category": "Summer Wear",
-      "price": 10.99,
-      "currency": "USD",
-      "available_stock": 160,
-      "rating": 4.6,
-      "age_group": "7-12",
-      "sizes": ["M", "L", "XL"]
+    "poids": {
+      "valeur": 137,
+      "unite": "kg"
     },
-    {
-      "name": "Corduroy Trousers",
-      "description": "Stylish corduroy trousers that offer warmth and comfort.",
-      "category": "Winter Wear",
-      "price": 25.49,
-      "currency": "USD",
-      "available_stock": 95,
-      "rating": 4.5,
-      "age_group": "5-10",
-      "sizes": ["S", "M", "L"]
+    "materiau": "Tissu polyester",
+    "couleur": "Blanc",
+    "marque": "Ferm Living",
+    "stock": 5,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      11,
+      12,
+      13
+    ],
+    "tags": [
+      "canapé",
+      "tissu",
+      "blanc",
+      "moderne"
+    ],
+    "designer": "Ferm Living"
+  },
+  {
+    "id": 7,
+    "nom": "Canapé d'angle Soft Mags",
+    "description": "Canapé d'angle en tissu gris avec accoudoir gauche, conçu par Hay. Le canapé Soft Mags est un mobilier modulable qui allie confort et design épuré. Le tissu Divina, doux au toucher, offre une assise agréable et durable. Parfait pour créer un espace de vie moderne et confortable.",
+    "categorie": "Canapés",
+    "prix": 3499.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/e/1/canape-d-angle-soft-mags-accoudoir-droit-gris-clair-tissu-divina_madeindesign_224439_original.jpg",
+    "dimensions": {
+      "longueur": 314,
+      "largeur": 104,
+      "hauteur": 79,
+      "unite": "cm"
     },
-    {
-      "name": "Sun Hat",
-      "description": "Wide-brimmed sun hat to protect kids from the harsh summer sun.",
-      "category": "Accessories",
-      "price": 7.49,
-      "currency": "USD",
-      "available_stock": 210,
-      "rating": 4.8,
-      "age_group": "2-10",
-      "sizes": ["One Size"]
+    "poids": {
+      "valeur": 130,
+      "unite": "kg"
     },
-    {
-      "name": "Striped Socks (Pack of 3)",
-      "description": "Comfortable socks with colorful stripes, suitable for daily wear.",
-      "category": "Accessories",
-      "price": 6.99,
-      "currency": "USD",
-      "available_stock": 250,
-      "rating": 4.4,
-      "age_group": "3-12",
-      "sizes": ["S", "M", "L"]
+    "materiau": "Tissu Divina, Bois",
+    "couleur": "Gris",
+    "marque": "Hay",
+    "stock": 3,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "10-15 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      14,
+      15,
+      16
+    ],
+    "tags": [
+      "canapé",
+      "angle",
+      "gris",
+      "moderne"
+    ],
+    "designer": "Hay"
+  },
+  {
+    "id": 8,
+    "nom": "Canapé droit Victoria",
+    "description": "Canapé droit en tissu blanc beige de Popus Editions. Ce canapé de 180 cm de longueur se distingue par son design élégant et son confort supérieur. Il est parfait pour ajouter une touche sophistiquée à tout espace de vie moderne.",
+    "categorie": "Canapés",
+    "prix": 1299.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/d/b/canape-droit-victoria-ecru-macadamia-tissu-arsene_madeindesign_397709_original.jpg",
+    "dimensions": {
+      "longueur": 180,
+      "largeur": 95,
+      "hauteur": 67,
+      "unite": "cm"
     },
-    {
-      "name": "Snow Boots",
-      "description": "Waterproof snow boots with a fluffy lining for easy play in the snow.",
-      "category": "Winter Wear",
-      "price": 29.99,
-      "currency": "USD",
-      "available_stock": 70,
-      "rating": 4.7,
-      "age_group": "4-10",
-      "sizes": ["M", "L"]
+    "poids": {
+      "valeur": 70,
+      "unite": "kg"
     },
-    {
-      "name": "Button-Down Shirt",
-      "description": "Smart button-down shirt, perfect for formal events or parties.",
-      "category": "Formal Wear",
-      "price": 14.99,
-      "currency": "USD",
-      "available_stock": 110,
-      "rating": 4.5,
-      "age_group": "6-12",
-      "sizes": ["M", "L", "XL"]
+    "materiau": "Tissu polyester",
+    "couleur": "Blanc Beige",
+    "marque": "Popus Editions",
+    "stock": 7,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "canapé",
+      "blanc",
+      "beige",
+      "moderne"
+    ],
+    "designer": "Popus Editions"
+  },
+  {
+    "id": 9,
+    "nom": "Table basse Olo",
+    "description": "Table basse ronde en pierre blanc beige avec une surface en béton ciré. Son design minimaliste s'intègre parfaitement dans tout intérieur moderne.",
+    "categorie": "Tables basses",
+    "prix": 1505.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/3/3/table-basse-olo-ivoire-beton-cire_madeindesign_362739_original.jpg",
+    "dimensions": {
+      "diametre": 70,
+      "hauteur": 33,
+      "unite": "cm"
     },
-    {
-      "name": "Denim Jacket",
-      "description": "Classic denim jacket for a casual, timeless look.",
-      "category": "Summer Wear",
-      "price": 26.99,
-      "currency": "USD",
-      "available_stock": 90,
-      "rating": 4.7,
-      "age_group": "5-10",
-      "sizes": ["S", "M", "L"]
+    "poids": {
+      "valeur": 40,
+      "unite": "kg"
     },
-    {
-      "name": "Thermal Leggings",
-      "description": "Thermal leggings to wear under trousers for extra warmth in winter.",
-      "category": "Winter Wear",
-      "price": 12.49,
-      "currency": "USD",
-      "available_stock": 150,
-      "rating": 4.8,
-      "age_group": "6-12",
-      "sizes": ["M", "L", "XL"]
+    "materiau": "Pierre, Béton ciré",
+    "couleur": "Blanc Beige",
+    "marque": "Mogg",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "table basse",
+      "pierre",
+      "béton ciré",
+      "moderne"
+    ],
+    "designer": "Mogg"
+  },
+  {
+    "id": 10,
+    "nom": "Tabouret Chubby",
+    "description": "Tabouret en céramique rose avec une forme arrondie et ludique, parfait pour un intérieur moderne et décontracté.",
+    "categorie": "Tabourets",
+    "prix": 365.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/6/1/tabouret-chubby-blanc-brillant-blanc-mat_madeindesign_359003_original.jpg",
+    "dimensions": {
+      "diametre": 34,
+      "hauteur": 44,
+      "unite": "cm"
     },
-    {
-      "name": "Plaid Skirt",
-      "description": "Chic plaid skirt that pairs well with a variety of tops for any occasion.",
-      "category": "Summer Wear",
-      "price": 13.99,
-      "currency": "USD",
-      "available_stock": 135,
-      "rating": 4.6,
-      "age_group": "7-12",
-      "sizes": ["M", "L"]
+    "poids": {
+      "valeur": 8,
+      "unite": "kg"
     },
-    {
-      "name": "Long Sleeve Tee",
-      "description": "Soft and comfortable long sleeve tee ideal for any season.",
-      "category": "All Season Wear",
-      "price": 11.99,
-      "currency": "USD",
-      "available_stock": 180,
-      "rating": 4.6,
-      "age_group": "4-9",
-      "sizes": ["S", "M", "L"]
+    "materiau": "Céramique",
+    "couleur": "Rose",
+    "marque": "Pols Potten",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      30,
+      31,
+      32
+    ],
+    "tags": [
+      "tabouret",
+      "céramique",
+      "rose",
+      "moderne"
+    ],
+    "designer": "Pols Potten"
+  },
+  {
+    "id": 11,
+    "nom": "Noguchi Coffee Table",
+    "description": "Table basse en verre et bois naturel, conçue par Isamu Noguchi en 1944. Un classique intemporel alliant simplicité et élégance.",
+    "categorie": "Tables basses",
+    "prix": 2590.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/7/7/coffee-table-noguchi-coffee-table-walnut_madeindesign_372134_original.jpg",
+    "dimensions": {
+      "longueur": 128,
+      "largeur": 93,
+      "hauteur": 40,
+      "unite": "cm"
     },
-    {
-      "name": "Raincoat",
-      "description": "Water-resistant raincoat with hood, perfect for rainy days.",
-      "category": "Accessories",
-      "price": 22.99,
-      "currency": "USD",
-      "available_stock": 115,
-      "rating": 4.7,
-      "age_group": "5-10",
-      "sizes": ["S", "M", "L"]
+    "poids": {
+      "valeur": 60,
+      "unite": "kg"
     },
-    {
-      "name": "Hooded Bathrobe",
-      "description": "Soft hooded bathrobe to keep warm after a bath or swim.",
-      "category": "Sleepwear",
-      "price": 19.99,
-      "currency": "USD",
-      "available_stock": 95,
-      "rating": 4.8,
-      "age_group": "3-9",
-      "sizes": ["XS", "S", "M"]
+    "materiau": "Verre, Bois",
+    "couleur": "Bois Naturel",
+    "marque": "Vitra",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      40,
+      41,
+      42
+    ],
+    "tags": [
+      "verre",
+      "bois",
+      "classique",
+      "design"
+    ],
+    "designer": "Isamu Noguchi"
+  },
+  {
+    "id": 12,
+    "nom": "Chaise C-Chair",
+    "description": "Chaise en fibre végétale beige et bois naturel avec un cannage rééditée en 1947. Un design élégant et intemporel qui allie confort et esthétique.",
+    "categorie": "Chaises",
+    "prix": 1115.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/a/1/chaise-c-chair-corde-naturelle-chene_madeindesign_352070_original.jpg",
+    "dimensions": {
+      "longueur": 53,
+      "largeur": 48,
+      "hauteur": 80,
+      "unite": "cm"
     },
-    {
-      "name": "Tulle Fairy Dress",
-      "description": "Enchanting fairy dress with layers of tulle, perfect for dress-up or parties.",
-      "category": "Formal Wear",
-      "price": 27.99,
-      "currency": "USD",
-      "available_stock": 80,
-      "rating": 4.9,
-      "age_group": "3-7",
-      "sizes": ["S", "M"]
+    "poids": {
+      "valeur": 6.5,
+      "unite": "kg"
     },
-    {
-      "name": "Warm Knit Gloves",
-      "description": "Soft knit gloves to keep little hands warm during winter.",
-      "category": "Accessories",
-      "price": 4.99,
-      "currency": "USD",
-      "available_stock": 215,
-      "rating": 4.5,
-      "age_group": "4-12",
-      "sizes": ["One Size"]
+    "materiau": "Bois Naturel, Fibre Végétale",
+    "couleur": "Beige, Bois Naturel",
+    "marque": "Gubi",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "2-4 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      3,
+      12,
+      18
+    ],
+    "tags": [
+      "vintage",
+      "bois",
+      "cannage",
+      "fibre végétale"
+    ],
+    "designer": "Marcel Gascoin"
+  },
+  {
+    "id": 13,
+    "nom": "Chaise Empilable Rey",
+    "description": "Chaise empilable en bois rouge, design emblématique de Bruno Rey datant de 1971. Une assise à la fois robuste et élégante, idéale pour une utilisation quotidienne.",
+    "categorie": "Chaises",
+    "prix": 459.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/0/2/chaise-empilable-rey-rouge-scarlet_madeindesign_388140_original.jpg",
+    "dimensions": {
+      "longueur": 44,
+      "largeur": 49,
+      "hauteur": 80,
+      "unite": "cm"
     },
-    {
-      "name": "Leather Boots",
-      "description": "Stylish leather boots with a comfortable fit.",
-      "category": "Winter Wear",
-      "price": 30.99,
-      "currency": "USD",
-      "available_stock": 50,
-      "rating": 4.6,
-      "age_group": "6-12",
-      "sizes": ["M", "L"]
+    "poids": {
+      "valeur": 5.8,
+      "unite": "kg"
     },
-    {
-      "name": "Board Shorts",
-      "description": "Quick-dry board shorts ideal for swimming and beach days.",
-      "category": "Summer Wear",
-      "price": 15.99,
-      "currency": "USD",
-      "available_stock": 140,
-      "rating": 4.7,
-      "age_group": "7-12",
-      "sizes": ["M", "L", "XL"]
+    "materiau": "Bois",
+    "couleur": "Rouge",
+    "marque": "HAY",
+    "stock": 20,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      4,
+      9,
+      14
+    ],
+    "tags": [
+      "empilable",
+      "bois",
+      "rouge",
+      "vintage"
+    ],
+    "designer": "Bruno Rey"
+  },
+  {
+    "id": 14,
+    "nom": "Fauteuil à roulettes Physix",
+    "description": "Fauteuil à roulettes avec une assise en tissu résille noire. Un design ergonomique moderne pour un confort optimal dans les environnements de bureau.",
+    "categorie": "Fauteuils de bureau",
+    "prix": 1169.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/6/3/fauteuil-a-roulettes-physix-noir-tissu-trioknit-structure-noire_madeindesign_373303_original.jpg",
+    "dimensions": {
+      "longueur": 68,
+      "largeur": 65,
+      "hauteur": 95,
+      "unite": "cm"
     },
-    {
-      "name": "Puffer Vest",
-      "description": "Lightweight puffer vest perfect for layering during cooler months.",
-      "category": "Winter Wear",
-      "price": 18.99,
-      "currency": "USD",
-      "available_stock": 120,
-      "rating": 4.6,
-      "age_group": "5-10",
-      "sizes": ["S", "M", "L"]
+    "poids": {
+      "valeur": 14,
+      "unite": "kg"
     },
-    {
-      "name": "Ribbed Leggings",
-      "description": "Comfortable ribbed leggings that easily match with any top.",
-      "category": "All Season Wear",
-      "price": 9.99,
-      "currency": "USD",
-      "available_stock": 160,
-      "rating": 4.4,
-      "age_group": "3-8",
-      "sizes": ["XS", "S", "M"]
+    "materiau": "Tissu, Résille, Aluminium",
+    "couleur": "Noir",
+    "marque": "Vitra",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "3 ans",
+    "produitsAssocies": [
+      3,
+      8,
+      11
+    ],
+    "tags": [
+      "fauteuil",
+      "bureau",
+      "ergonomique",
+      "roulettes"
+    ],
+    "designer": "Alberto Meda"
+  },
+  {
+    "id": 15,
+    "nom": "Pouf Ballon Regular",
+    "description": "Pouf ergonomique en forme de ballon, conçu pour un confort optimal en position assise. Recouvert de tissu blanc/beige, idéal pour une utilisation quotidienne à la maison ou au bureau.",
+    "categorie": "Poufs",
+    "prix": 199.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/4/f/pouf-ballon-regular-neige-bouclette-edition-limitee_madeindesign_400488_original.jpg",
+    "dimensions": {
+      "diametre": 55,
+      "unite": "cm"
     },
-    {
-      "name": "Funky Sunglasses",
-      "description": "Bright and fun sunglasses to protect eyes in style.",
-      "category": "Accessories",
-      "price": 6.49,
-      "currency": "USD",
-      "available_stock": 230,
-      "rating": 4.8,
-      "age_group": "5-12",
-      "sizes": ["One Size"]
+    "poids": {
+      "valeur": 5,
+      "unite": "kg"
     },
-    {
-      "name": "Corded Hooded Top",
-      "description": "Trendy hooded top with adjustable cords.",
-      "category": "Winter Wear",
-      "price": 20.99,
-      "currency": "USD",
-      "available_stock": 100,
-      "rating": 4.7,
-      "age_group": "6-12",
-      "sizes": ["M", "L"]
-    }
-  ]
+    "materiau": "Tissu, PVC",
+    "couleur": "Blanc, Beige",
+    "marque": "Bloon Paris",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      4,
+      7,
+      9
+    ],
+    "tags": [
+      "ergonomique",
+      "pouf",
+      "ballon",
+      "confort"
+    ],
+    "designer": "Bloon Paris"
+  },
+  {
+    "id": 16,
+    "nom": "Fauteuil à roulettes direction pivotant",
+    "description": "Fauteuil direction pivotant en métal et tissu gris, design Jean Prouvé 1951. Allie confort et élégance pour un environnement de travail raffiné.",
+    "categorie": "Fauteuils de bureau",
+    "prix": 2450.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/c/2/fauteuil-a-roulettes-fauteuil-direction-pivotant-tissu-gris-bleute-tress-06-bleu-chene_madeindesign_397438_original.jpg",
+    "dimensions": {
+      "longueur": 63,
+      "largeur": 59,
+      "hauteur": 95,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 20,
+      "unite": "kg"
+    },
+    "materiau": "Métal, Tissu",
+    "couleur": "Gris",
+    "marque": "Vitra",
+    "stock": 8,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [
+      2,
+      5,
+      11
+    ],
+    "tags": [
+      "pivotant",
+      "direction",
+      "confort",
+      "design"
+    ],
+    "designer": "Jean Prouvé"
+  },
+  {
+    "id": 17,
+    "nom": "Chaise Tip Ton",
+    "description": "Chaise ergonomique inclinable en plastique vert, design par Vitra. Conçue pour offrir un confort optimal en position assise et une flexibilité d'inclinaison.",
+    "categorie": "Chaises",
+    "prix": 319.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/6/7/chaise-tip-ton-vert-olive_madeindesign_371903_original.jpg",
+    "dimensions": {
+      "longueur": 58,
+      "largeur": 58,
+      "hauteur": 80,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 5,
+      "unite": "kg"
+    },
+    "materiau": "Plastique",
+    "couleur": "Vert",
+    "marque": "Vitra",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      3,
+      7,
+      10
+    ],
+    "tags": [
+      "ergonomique",
+      "inclinable",
+      "plastique",
+      "confort"
+    ],
+    "designer": "Vitra"
+  },
+  {
+    "id": 18,
+    "nom": "Pouf Enfant Junior",
+    "description": "Pouf pour enfant en tissu violet nylon, idéal pour un confort et une assise ludique. Dimensions généreuses pour s'adapter à la croissance des enfants.",
+    "categorie": "Poufs",
+    "prix": 149.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/7/e/pouf-enfant-junior-lilas_madeindesign_417424_original.jpg",
+    "dimensions": {
+      "longueur": 130,
+      "largeur": 100,
+      "hauteur": null,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 6,
+      "unite": "kg"
+    },
+    "materiau": "Tissu Nylon",
+    "couleur": "Violet",
+    "marque": "Fatboy",
+    "stock": 12,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      2,
+      7,
+      14
+    ],
+    "tags": [
+      "enfant",
+      "pouf",
+      "tissu",
+      "confort"
+    ],
+    "designer": "Fatboy"
+  },
+  {
+    "id": 19,
+    "nom": "Pouf Point Large Sherpa",
+    "description": "Pouf large en tissu Sherpa blanc-beige, design par Fatboy. Confortable et élégant, ce pouf en fausse fourrure apporte une touche de douceur et de chaleur à tout espace.",
+    "categorie": "Poufs",
+    "prix": 179.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/a/1/pouf-point-large-sherpa-ecru-tissu-peluche-sherpa_madeindesign_397956_original.jpg",
+    "dimensions": {
+      "longueur": 70,
+      "largeur": 70,
+      "hauteur": null,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 4,
+      "unite": "kg"
+    },
+    "materiau": "Tissu Sherpa",
+    "couleur": "Blanc-Beige",
+    "marque": "Fatboy",
+    "stock": 20,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "1 an",
+    "produitsAssocies": [
+      1,
+      7,
+      14
+    ],
+    "tags": [
+      "pouf",
+      "sherpa",
+      "confort",
+      "fausse fourrure"
+    ],
+    "designer": "Fatboy"
+  },
+  {
+    "id": 20,
+    "nom": "Meuble Vitrine Haze",
+    "description": "Meuble vitrine en métal noir avec verre cannelé, design par Ferm Living. Parfait pour exposer vos objets tout en ajoutant une touche d'élégance à votre espace.",
+    "categorie": "Meubles de rangement",
+    "prix": 499.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/1/7/meuble-vitrine-haze-noir-verre-cannele_madeindesign_350231_original.jpg",
+    "dimensions": {
+      "longueur": 70,
+      "largeur": null,
+      "hauteur": 155,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 24,
+      "unite": "kg"
+    },
+    "materiau": "Métal, Verre cannelé",
+    "couleur": "Noir",
+    "marque": "Ferm Living",
+    "stock": 8,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      2,
+      14,
+      18
+    ],
+    "tags": [
+      "vitrine",
+      "métal",
+      "verre",
+      "design"
+    ],
+    "designer": "Ferm Living"
+  },
+  {
+    "id": 21,
+    "nom": "Table de chevet Monolit",
+    "description": "Table de chevet en chêne massif avec 1 tiroir, design simple et élégant, parfait pour une chambre contemporaine.",
+    "categorie": "Tables de chevet",
+    "prix": 429.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/d/6/table-de-chevet-monolit-chene-noir_madeindesign_349705_original.jpg",
+    "dimensions": {
+      "longueur": 40,
+      "largeur": 30,
+      "hauteur": 55,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 12,
+      "unite": "kg"
+    },
+    "materiau": "Chêne massif",
+    "couleur": "Bois naturel",
+    "marque": "Ethnicraft",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "4-6 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      12,
+      15,
+      19
+    ],
+    "tags": [
+      "table de chevet",
+      "bois",
+      "chêne massif"
+    ],
+    "designer": "Ethnicraft"
+  },
+  {
+    "id": 22,
+    "nom": "Table de chevet Écailles",
+    "description": "Table de chevet en bois naturel avec un tiroir et un design inspiré des motifs écailles, idéale pour apporter une touche élégante à votre chambre.",
+    "categorie": "Tables de chevet",
+    "prix": 590.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/d/f/table-de-chevet-ecailles-noyer-ecru_madeindesign_379809_original.jpg",
+    "dimensions": {
+      "longueur": 60,
+      "largeur": 40,
+      "hauteur": 50,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 15,
+      "unite": "kg"
+    },
+    "materiau": "Bois naturel",
+    "couleur": "Bois naturel",
+    "marque": "Maison Sarah Lavoine",
+    "stock": 8,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      18,
+      20,
+      25
+    ],
+    "tags": [
+      "table de chevet",
+      "bois naturel",
+      "design écailles"
+    ],
+    "designer": "Maison Sarah Lavoine"
+  },
+  {
+    "id": 23,
+    "nom": "Table basse T-Table Medio",
+    "description": "Table basse design en plastique transparent conçue par Patricia Urquiola. Cette table élégante et légère s'intègre parfaitement dans tout type d'intérieur moderne.",
+    "categorie": "Tables basses",
+    "prix": 288.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/b/b/table-basse-t-table-medio-cristal_madeindesign_57183_original.jpg",
+    "dimensions": {
+      "longueur": 50,
+      "largeur": 50,
+      "hauteur": 36,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 4,
+      "unite": "kg"
+    },
+    "materiau": "Plastique transparent",
+    "couleur": "Transparent",
+    "marque": "Kartell",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      12,
+      16,
+      21
+    ],
+    "tags": [
+      "table basse",
+      "plastique",
+      "transparent"
+    ],
+    "designer": "Patricia Urquiola"
+  },
+  {
+    "id": 24,
+    "nom": "Lampe de table AJ",
+    "description": "Lampe de table emblématique conçue par Arne Jacobsen en 1957, avec un design orientable et épuré. Cette lampe est idéale pour créer une ambiance lumineuse raffinée dans un intérieur moderne.",
+    "categorie": "Lampes de table",
+    "prix": 807.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/e/9/lampe-de-table-aj-noir_madeindesign_196169_original.jpg",
+    "dimensions": {
+      "longueur": null,
+      "largeur": null,
+      "hauteur": 56,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 3.5,
+      "unite": "kg"
+    },
+    "materiau": "Métal",
+    "couleur": "Noir",
+    "marque": "Louis Poulsen",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "2-3 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      19,
+      22,
+      25
+    ],
+    "tags": [
+      "lampe de table",
+      "design",
+      "orientable"
+    ],
+    "designer": "Arne Jacobsen"
+  },
+  {
+    "id": 25,
+    "nom": "Lampe de table Flowerpot VP3",
+    "description": "Lampe de table iconique Flowerpot VP3 conçue par Verner Panton en 1968. Fabriquée en métal argenté, elle se distingue par son design arrondi et rétro, idéal pour tout type d'intérieur moderne.",
+    "categorie": "Lampes de table",
+    "prix": 345.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/5/2/lampe-de-table-flowerpot-vp3-plaque-chrome_madeindesign_403381_original.jpg",
+    "dimensions": {
+      "longueur": null,
+      "largeur": null,
+      "hauteur": 50,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 3.0,
+      "unite": "kg"
+    },
+    "materiau": "Métal",
+    "couleur": "Argent",
+    "marque": "&Tradition",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "2-3 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      20,
+      21,
+      23
+    ],
+    "tags": [
+      "lampes",
+      "design rétro",
+      "métal argenté"
+    ],
+    "designer": "Verner Panton"
+  },
+  {
+    "id": 26,
+    "nom": "Applique IC Double 1",
+    "description": "Applique murale ou plafonnier IC Double 1 par Flos, design épuré avec deux sphères en verre blanc et une structure en métal doré, idéale pour ajouter une touche d'élégance moderne à tout espace.",
+    "categorie": "Appliques murales",
+    "prix": 665.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/3/a/applique-ic-double-1-laiton-blanc_madeindesign_341523_original.jpg",
+    "dimensions": {
+      "longueur": 42,
+      "largeur": null,
+      "hauteur": null,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 2.7,
+      "unite": "kg"
+    },
+    "materiau": "Verre, Métal",
+    "couleur": "Blanc, Or",
+    "marque": "Flos",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "2-3 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      22,
+      24,
+      27
+    ],
+    "tags": [
+      "applique",
+      "design moderne",
+      "verre blanc",
+      "métal doré"
+    ],
+    "designer": "Michael Anastassiades"
+  },
+  {
+    "id": 27,
+    "nom": "Lampe de table Vuelta LED",
+    "description": "Lampe de table en verre blanc Vuelta LED par Ferm Living, design moderne avec une texture sculpturale et une lumière LED intégrée, idéale pour apporter une ambiance chaleureuse et élégante.",
+    "categorie": "Luminaires",
+    "prix": 199.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/d/c/lampe-a-poser-vuelta-blanc_madeindesign_416160_original.jpg",
+    "dimensions": {
+      "longueur": 21,
+      "largeur": null,
+      "hauteur": 21,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 1.5,
+      "unite": "kg"
+    },
+    "materiau": "Verre, LED",
+    "couleur": "Blanc",
+    "marque": "Ferm Living",
+    "stock": 15,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "2-3 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      25,
+      28,
+      29
+    ],
+    "tags": [
+      "lampe",
+      "verre",
+      "LED",
+      "design moderne"
+    ],
+    "designer": "Ferm Living"
+  },
+  {
+    "id": 28,
+    "nom": "Console Marius bois naturel avec tiroir",
+    "description": "Console en bois naturel avec un tiroir, au design élégant et minimaliste. Idéale pour les espaces modernes, avec des finitions en chêne naturel.",
+    "categorie": "Mobilier",
+    "prix": 849.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/d/3/console-marius-chene-naturel_madeindesign_290475_original.jpg",
+    "dimensions": {
+      "longueur": 100,
+      "largeur": 40,
+      "hauteur": 85,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 30,
+      "unite": "kg"
+    },
+    "materiau": "Chêne naturel",
+    "couleur": "Bois naturel",
+    "marque": "Harto",
+    "stock": 20,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      15,
+      18,
+      22
+    ],
+    "tags": [
+      "console",
+      "bois naturel",
+      "tiroir",
+      "design moderne"
+    ],
+    "designer": "Harto"
+  },
+  {
+    "id": 29,
+    "nom": "Secrétaire mural Gaston bois gris",
+    "description": "Secrétaire mural en bois gris avec un design épuré et moderne. Parfait pour optimiser l'espace dans un bureau ou un coin de travail, avec des rangements intégrés pour un espace de travail organisé.",
+    "categorie": "Mobilier",
+    "prix": 399.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/a/f/secretaire-mural-gaston-gris-clair-gris-ardoise-chene_madeindesign_215064_original.jpg",
+    "dimensions": {
+      "longueur": 60,
+      "largeur": null,
+      "hauteur": 72,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 20,
+      "unite": "kg"
+    },
+    "materiau": "Bois",
+    "couleur": "Gris",
+    "marque": "Harto",
+    "stock": 12,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "3-5 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      28,
+      30,
+      32
+    ],
+    "tags": [
+      "secrétaire",
+      "bois gris",
+      "design moderne",
+      "mural"
+    ],
+    "designer": "Harto"
+  },
+  {
+    "id": 30,
+    "nom": "Étagère Pi bois naturel avec 3 étagères en acajou massif",
+    "description": "Étagère élégante en bois naturel avec trois étagères en acajou massif. Idéale pour organiser vos livres, objets de décoration ou autres accessoires dans un salon ou bureau moderne.",
+    "categorie": "Mobilier",
+    "prix": 1299.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/2/3/etagere-pi-3-etageres-acajou_madeindesign_414022_original.jpg",
+    "dimensions": {
+      "longueur": 100,
+      "largeur": 35,
+      "hauteur": 126,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 40,
+      "unite": "kg"
+    },
+    "materiau": "Acajou massif, Bois naturel",
+    "couleur": "Bois naturel",
+    "marque": "Ethnicraft",
+    "stock": 8,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "5-7 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      28,
+      29,
+      31
+    ],
+    "tags": [
+      "étagère",
+      "bois naturel",
+      "acajou",
+      "design moderne"
+    ],
+    "designer": "Ethnicraft"
+  },
+  {
+    "id": 31,
+    "nom": "Bibliothèque Rotterdam bois naturel",
+    "description": "Bibliothèque en bois naturel avec un design élégant et moderne. Idéale pour organiser vos livres, objets de décoration ou autres accessoires dans un espace de vie ou bureau.",
+    "categorie": "Mobilier",
+    "prix": 749.00,
+    "sourceImage": "https://media.madeindesign.com/nuxeo/products/b/f/bibliotheque-rotterdam-chene_madeindesign_265033_original.jpg",
+    "dimensions": {
+      "longueur": 70,
+      "largeur": 40,
+      "hauteur": 198,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 50,
+      "unite": "kg"
+    },
+    "materiau": "Bois naturel",
+    "couleur": "Bois naturel",
+    "marque": "Pop Up Home",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "2 ans",
+    "produitsAssocies": [
+      28,
+      30,
+      32
+    ],
+    "tags": [
+      "bibliothèque",
+      "bois naturel",
+      "design moderne",
+      "stockage"
+    ],
+    "designer": "Pop Up Home"
+  },
+  {
+    "id": 107177,
+    "nom": "Chaise de Salle à Manger en Rotin Tento",
+    "description": "Chaise en bois de frêne avec siège en rotin, style vintage, robuste et stable avec une structure en acier.",
+    "categorie": "Chaises",
+    "prix": 174.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/2462485/chaise-de-salle-a-manger-en-rotin-style-tento.jpg?cf-resize=gallery",
+    "dimensions": {
+      "longueur": 67,
+      "largeur": 46.5,
+      "hauteur": 82.5,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 6.5,
+      "unite": "kg"
+    },
+    "materiau": "Frêne, Rotin, Acier",
+    "couleur": "Bois Naturel, Noir",
+    "marque": "SKLUM",
+    "stock": 10,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [
+      213895
+    ],
+    "tags": [
+      "vintage",
+      "rotin",
+      "frêne",
+      "stable"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 141191,
+    "nom": "Chaise de réalisateur pliante en bambou pour jardin Woody",
+    "description": "Chaise pliante avec structure en bambou et siège en polyester et coton. Idéale pour l'extérieur, facile à ranger et transporter.",
+    "categorie": "Chaises de jardin",
+    "prix": 58.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/2853962/chaise-de-realisateur-pliante-en-bambou-pour-jardin-woody.jpg?cf-resize=gallery",
+    "dimensions": {
+      "longueur": 47,
+      "largeur": 63,
+      "hauteur": 91,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 4.45,
+      "unite": "kg"
+    },
+    "materiau": "Bambou, Polyester, Coton",
+    "couleur": "Blanc",
+    "marque": "SKLUM",
+    "stock": 2,
+    "disponibilite": "En stock",
+    "livraisonEstimee": "7-10 jours",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "extérieur",
+      "pliable",
+      "bambou"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 147866,
+    "nom": "Ensemble de Jardin en Bambou Livayna",
+    "description": "Salon de jardin en bambou comprenant un canapé 2 places, deux fauteuils et une table basse, avec coussins déhoussables en polyester.",
+    "categorie": "Salons de jardin",
+    "prix": 359.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/2806894/ensemble-de-jardin-en-bambou-livayna.jpg?cf-resize=gallery",
+    "dimensions": {
+      "longueur": 120,
+      "largeur": 70,
+      "hauteur": 85,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 30,
+      "unite": "kg"
+    },
+    "materiau": "Bambou, Polyester, Mousse",
+    "couleur": "Naturel, Blanc",
+    "marque": "SKLUM",
+    "stock": "Réservé",
+    "disponibilite": "Précommande",
+    "livraisonEstimee": "10/11/2024",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "extérieur",
+      "bambou",
+      "salon de jardin"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 97096,
+    "nom": "Distributeur de savon en verre Ovie",
+    "description": "Distributeur de savon fabriqué à partir de verre recyclé, avec pompe en plastique. Ajoute une touche vintage à votre salle de bain.",
+    "categorie": "Accessoires de salle de bain",
+    "prix": 6.95,
+    "sourceImage": "https://cdn.sklum.com/fr/1909898/distributeur-de-savon-en-verre-ovie.jpg?cf-resize=gallery",
+    "dimensions": {
+      "hauteur": 18.2,
+      "diametre": 7.9,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 0.32,
+      "unite": "kg"
+    },
+    "materiau": "Verre, Plastique",
+    "couleur": "Rose",
+    "marque": "SKLUM",
+    "stock": "Réservé",
+    "disponibilite": "Précommande",
+    "livraisonEstimee": "01/12/2024",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "vintage",
+      "verre recyclé",
+      "salle de bain"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 158245,
+    "nom": "Miroir mural rembourré (60x160 cm) Evelyn",
+    "description": "Miroir mural rembourré en tissu 100% polyester avec rembourrage en mousse. Il possède une structure en MDF et est idéal pour agrandir et illuminer les espaces intérieurs.",
+    "categorie": "Miroirs",
+    "prix": 119.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/2934422/miroir-mural-rembourre-60x160-cm-evelyn.jpg?cf-resize=gallery",
+    "dimensions": {
+      "hauteur": 160,
+      "largeur": 60,
+      "epaisseur": 5,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 14,
+      "unite": "kg"
+    },
+    "materiau": "Polyester, MDF",
+    "couleur": "Blanc",
+    "marque": "SKLUM",
+    "stock": "Précommande",
+    "disponibilite": "Envoi à partir du 21/10/2024",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "intérieur",
+      "miroir",
+      "rembourré"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 111803,
+    "nom": "Égouttoir à Vaisselle Evander",
+    "description": "Égouttoir extensible en polypropylène avec un drain caché pour éliminer l'excès d'eau. Design simple et discret, idéal pour optimiser l'espace dans la cuisine.",
+    "categorie": "Ustensiles de cuisine",
+    "prix": 15.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/1531509/egouttoir-a-vaisselle-evander.jpg?cf-resize=gallery",
+    "dimensions": {
+      "hauteur": 15.5,
+      "largeur": "32-56",
+      "profondeur": 36,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 1.11,
+      "unite": "kg"
+    },
+    "materiau": "Polypropylène",
+    "couleur": "Rose pâle",
+    "marque": "SKLUM",
+    "stock": "En stock",
+    "disponibilite": "Préparation sous 7-10 jours",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "cuisine",
+      "égouttoir",
+      "extensible"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 137262,
+    "nom": "Tapis en Jute et Coton (240x160 cm) Davina",
+    "description": "Tapis rectangulaire fait à la main, en jute (80%) et coton (20%), avec motifs géométriques et franges décoratives. Idéal pour le salon ou la chambre, il ajoute une touche chaleureuse et naturelle.",
+    "categorie": "Tapis",
+    "prix": 109.95,
+    "sourceImage": "https://cdn.sklum.com/fr/wk/3038877/tapis-en-jute-et-coton-237x162-cm-davina.jpg?cf-resize=gallery",
+    "dimensions": {
+      "hauteur": 240,
+      "largeur": 160,
+      "epaisseur": 1.1,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 7.8,
+      "unite": "kg"
+    },
+    "materiau": "Jute, Coton",
+    "couleur": "Naturel, Blanc",
+    "marque": "SKLUM",
+    "stock": "Précommande",
+    "disponibilite": "Envoi à partir du 28/09/2024",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "tapis",
+      "jute",
+      "fait main"
+    ],
+    "designer": "SKLUM"
+  },
+  {
+    "id": 6294,
+    "nom": "Meuble TV Sina en manguier massif et rotin",
+    "description": "Meuble TV en manguier massif avec portes en rotin. Design naturel et durable, idéal pour un intérieur chaleureux.",
+    "categorie": "Meubles TV",
+    "prix": 449,
+    "sourceImage": "https://media.tikamoon.com/images/t_product-picture-1200/f_auto/website/product/6294_A_HD_001/meuble-tv-sina-en-manguier-massif-et-rotin-145-cm-6294",
+    "dimensions": {
+      "hauteur": 45,
+      "largeur": 144,
+      "profondeur": 36,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 22.6,
+      "unite": "kg"
+    },
+    "materiau": "Manguier, Rotin",
+    "couleur": "Naturel",
+    "marque": "Tikamoon",
+    "stock": "En stock",
+    "disponibilite": "7 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [],
+    "tags": [
+      "meuble TV",
+      "manguier",
+      "rotin",
+      "naturel"
+    ],
+    "designer": "Tikamoon"
+  },
+  {
+    "id": 3874,
+    "nom": "Table basse Jade en palissandre massif et marbre",
+    "description": "Table basse élégante avec plateau en marbre et pieds en palissandre massif. Un mariage de matériaux nobles pour un salon raffiné.",
+    "categorie": "Tables basses",
+    "prix": 399,
+    "sourceImage": "https://media.tikamoon.com/images/t_product-picture-774/f_auto/website/product/3874_Z_HD_006/table-basse-en-palissandre-massif-et-marbre-jade-3874",
+    "dimensions": {
+      "hauteur": 40,
+      "diametre": 80,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 24,
+      "unite": "kg"
+    },
+    "materiau": "Palissandre, Marbre",
+    "couleur": "Naturel, Blanc",
+    "marque": "Tikamoon",
+    "stock": "En stock",
+    "disponibilite": "5-7 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [],
+    "tags": [
+      "table basse",
+      "palissandre",
+      "marbre",
+      "design"
+    ],
+    "designer": "Tikamoon"
+  },
+  {
+    "id": 2213,
+    "nom": "Buffet haut en acajou Magda 50's",
+    "description": "Buffet en acajou inspiré des années 50, avec 2 portes et 3 tiroirs. Parfait pour apporter une touche vintage à votre salon.",
+    "categorie": "Buffets",
+    "prix": 849,
+    "sourceImage": "https://media.tikamoon.com/images/t_product-picture-1200/f_auto/website/product/2212_A_HD_1/buffet-en-acajou-magda-50s-200-cm-2212",
+    "dimensions": {
+      "hauteur": 130,
+      "largeur": 85,
+      "profondeur": 40,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 35,
+      "unite": "kg"
+    },
+    "materiau": "Acajou",
+    "couleur": "Naturel",
+    "marque": "Tikamoon",
+    "stock": "En stock",
+    "disponibilite": "7 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [],
+    "tags": [
+      "buffet",
+      "acajou",
+      "vintage",
+      "années 50"
+    ],
+    "designer": "Tikamoon"
+  },
+  {
+    "id": 1294,
+    "nom": "Tête de lit en teck massif Gentong",
+    "description": "Tête de lit majestueuse en teck massif, fabriquée à la main. Apporte un style naturel et chaleureux à votre chambre.",
+    "categorie": "Têtes de lit",
+    "prix": 599,
+    "sourceImage": "https://media.tikamoon.com/images/t_product-picture-1200/f_auto/website/product/1294__HD_005/tete-de-lit-en-teck-massif-210-cm-gentong-1294",
+    "dimensions": {
+      "hauteur": 90,
+      "largeur": 210,
+      "profondeur": 4,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 25,
+      "unite": "kg"
+    },
+    "materiau": "Teck massif",
+    "couleur": "Naturel",
+    "marque": "Tikamoon",
+    "stock": "En stock",
+    "disponibilite": "5-7 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [],
+    "tags": [
+      "tête de lit",
+      "teck",
+      "naturel",
+      "artisanat"
+    ],
+    "designer": "Tikamoon"
+  },
+  {
+    "id": 6531,
+    "nom": "Banquette de jardin en teck massif",
+    "description": "Banquette de jardin en teck massif, résistante et idéale pour vos moments de détente en extérieur. Design sobre et élégant.",
+    "categorie": "Mobilier de jardin",
+    "prix": 299,
+    "sourceImage": "https://media.tikamoon.com/images/t_product-picture-1200/f_auto/website/product/5388__HD_002/banquette-de-jardin-en-teck-massif-recycle-joaquin-5388",
+    "dimensions": {
+      "hauteur": 80,
+      "largeur": 120,
+      "profondeur": 55,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 15,
+      "unite": "kg"
+    },
+    "materiau": "Teck massif",
+    "couleur": "Naturel",
+    "marque": "Tikamoon",
+    "stock": "En stock",
+    "disponibilite": "7-10 jours",
+    "garantie": "5 ans",
+    "produitsAssocies": [],
+    "tags": [
+      "banquette",
+      "jardin",
+      "teck",
+      "extérieur"
+    ],
+    "designer": "Tikamoon"
+  },
+  {
+    "id": 87515,
+    "nom": "Banc coffre velours Solaro",
+    "description": "Banc coffre en velours, élégant et pratique, avec coffre intégré pour optimiser le rangement. Pieds en acier, structure en MDF et rembourrage en mousse pour un confort maximal.",
+    "categorie": "Bancs",
+    "prix": 99.99,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/87750/large/01W087515A.jpg?frz-v=1870",
+    "dimensions": {
+      "longueur": 100,
+      "profondeur": 40,
+      "hauteur": 53,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 11.8,
+      "unite": "kg"
+    },
+    "materiau": "Velours, MDF, Acier",
+    "couleur": "Beige",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "banc",
+      "coffre",
+      "velours",
+      "beige"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 87624,
+    "nom": "Chiffonnier Mohea",
+    "description": "Chiffonnier à 5 tiroirs, structure en MDF avec placage en frêne. Son design tendance et sa couleur vert céladon ajoutent une touche élégante à votre intérieur.",
+    "categorie": "Chiffonniers",
+    "prix": 169,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/87750/large/01W087624C.jpg?frz-v=1870",
+    "dimensions": {
+      "longueur": 45,
+      "profondeur": 39,
+      "hauteur": 113,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 27.8,
+      "unite": "kg"
+    },
+    "materiau": "MDF, Frêne",
+    "couleur": "Vert céladon",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "chiffonnier",
+      "5 tiroirs",
+      "vert céladon"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 87833,
+    "nom": "Lot de 2 tables basses Jivan",
+    "description": "Lot de 2 tables basses en travertin avec pieds en acacia. Design élégant et empilable pour économiser de l'espace dans votre salon.",
+    "categorie": "Tables basses",
+    "prix": 299.00,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/88000/large/01W087833A.jpg?frz-v=1870",
+    "dimensions": {
+      "longueur": 60,
+      "profondeur": 40,
+      "hauteur": 52,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 16,
+      "unite": "kg"
+    },
+    "materiau": "Travertin, Acacia",
+    "couleur": "Beige, Bois naturel",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "tables basses",
+      "travertin",
+      "acacia"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 51158,
+    "nom": "Bureau 2 tiroirs Tedy",
+    "description": "Bureau chic avec deux tiroirs et une étagère. Structure en panneaux de fibres de bois avec pieds en métal, idéal pour un espace de travail moderne.",
+    "categorie": "Bureaux",
+    "prix": 149.00,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/51250/large/01W051158A.jpg?frz-v=1870",
+    "dimensions": {
+      "longueur": 110,
+      "profondeur": 55,
+      "hauteur": 78.5,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 28,
+      "unite": "kg"
+    },
+    "materiau": "Panneaux de fibres, métal",
+    "couleur": "Noir",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "bureau",
+      "2 tiroirs",
+      "moderne"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 88086,
+    "nom": "Tabouret d'appoint Chiara",
+    "description": "Tabouret d'appoint en tissu chenille avec des motifs jacquard. Les pieds en bois d'hévéa apportent une grande stabilité, parfait pour un intérieur au style Art déco.",
+    "categorie": "Tabourets",
+    "prix": 49.99,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/88250/large/01W088086A.jpg?frz-v=1870",
+    "dimensions": {
+      "longueur": 38,
+      "profondeur": 38,
+      "hauteur": 41,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 3.1,
+      "unite": "kg"
+    },
+    "materiau": "Polyester, Hévéa, Panneau de contreplaqué",
+    "couleur": "Ambre et Blanc",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "tabouret",
+      "Art déco",
+      "chenille",
+      "hévéa"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 64852,
+    "nom": "Table de chevet Rayo",
+    "description": "Table de chevet moderne avec un tiroir en cannage de rotin et des pieds en fer finition laiton. Son design raffiné apporte une touche sophistiquée à votre chambre.",
+    "categorie": "Tables de chevet",
+    "prix": 79.99,
+    "sourceImage": "https://www.atmosphera.com/fr/phototheque/atmosphera.com/65000/large/01W064852A.jpg?frz-v=1870g",
+    "dimensions": {
+      "longueur": 45,
+      "profondeur": 35,
+      "hauteur": 50,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 8.6,
+      "unite": "kg"
+    },
+    "materiau": "Bouleau, Rotin, Fer",
+    "couleur": "Naturel et Laiton",
+    "marque": "Atmosphera",
+    "stock": "En stock",
+    "disponibilite": "Livraison entre 12/09 et 16/09",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "table de chevet",
+      "rotin",
+      "bois",
+      "laiton"
+    ],
+    "designer": "Atmosphera"
+  },
+  {
+    "id": 41378,
+    "nom": "Canapé convertible scandinave 3 places Yumi",
+    "description": "Canapé convertible design scandinave en tissu gris clair avec pieds en bois de chêne. Confortable et pratique, il se transforme en lit d'appoint grâce à son dossier multi-position.",
+    "categorie": "Canapés",
+    "prix": 467.99,
+    "sourceImage": "https://www.miliboo.com/canape-convertible-scandinave-3-places-en-tissu-gris-clair-et-bois-clair-yumi-41378-5bb3742d3276c_1200_675_.jpg",
+    "dimensions": {
+      "longueur": 189,
+      "profondeur": 102,
+      "hauteur": 89,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 47,
+      "unite": "kg"
+    },
+    "materiau": "Tissu polyester, Chêne",
+    "couleur": "Gris clair",
+    "marque": "Miliboo",
+    "stock": "En stock",
+    "disponibilite": "Expédié sous 24h/72h",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "canapé",
+      "convertible",
+      "scandinave",
+      "lit"
+    ],
+    "designer": "Miliboo"
+  },
+  {
+    "id": "ARMWIOYEGU001",
+    "nom": "Fauteuil rotatif Willow",
+    "description": "Fauteuil rotatif en tweed jaune miami avec une structure en fer couleur gunmetal. Un design élégant et confortable avec un dossier arrondi et un rembourrage en mousse haute densité.",
+    "categorie": "Fauteuils",
+    "prix": 499,
+    "sourceImage": "https://www.nvgallery.com/_external/?url=https%3A%2F%2Fcdn.nvgallery.com%2Fstatic%2Fimages%2F668ba2af38365511620609.jpg%3Fwidth%3D1440%26height%3D750%26fit%3Dcrop%26quality%3D85%2C90&h=C3TiG1JW6xXWeStr2VOUIB9Hq6_scMtdTjSosOgWVzk=",
+    "dimensions": {
+      "largeur": 72,
+      "profondeur": 74,
+      "hauteur": 82,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 14,
+      "unite": "kg"
+    },
+    "materiau": "Tweed, Fer",
+    "couleur": "Jaune Miami",
+    "marque": "NV Gallery",
+    "stock": "En stock",
+    "disponibilite": "Livraison sous 3-5 jours",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "fauteuil",
+      "rotatif",
+      "tweed",
+      "design"
+    ],
+    "designer": "NV Gallery"
+  },
+  {
+    "id": "FLLMAVBKWH001",
+    "nom": "Lampadaire Malva",
+    "description": "Lampadaire en marbre blanc et métal noir, idéal pour un style industriel. Il allie robustesse et design contemporain avec une base en marbre conique et un pied fin en métal.",
+    "categorie": "Lampadaires",
+    "prix": 279,
+    "sourceImage": "https://www.nvgallery.com/_external/?url=https%3A%2F%2Fcdn.nvgallery.com%2Fstatic%2Fimages%2F658d76a4acf16584509786.jpg%3Fwidth%3D1440%26height%3D750%26fit%3Dcrop%26quality%3D85%2C90&h=GOHxFk3ccOS_H5Sl7-HquPZOGhEHmnKGowOAJVS8MG0=",
+    "dimensions": {
+      "hauteur": 183,
+      "diametre": 55,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 18.6,
+      "unite": "kg"
+    },
+    "materiau": "Marbre blanc, Fer noir",
+    "couleur": "Blanc, Noir",
+    "marque": "NV Gallery",
+    "stock": "Livraison sous 10 à 12 semaines",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "lampadaire",
+      "marbre",
+      "métal",
+      "design"
+    ],
+    "designer": "NV Gallery"
+  },
+  {
+    "id": "DESROTNANA001",
+    "nom": "Bureau Adriano",
+    "description": "Bureau ou table à manger en bois de frêne blond avec un design minimaliste et sculpté. Convient pour un espace de travail élégant ou comme table à manger pour 4 convives.",
+    "categorie": "Bureaux",
+    "prix": 1099,
+    "sourceImage": "https://www.nvgallery.com/_external/?url=https%3A%2F%2Fcdn.nvgallery.com%2Fstatic%2Fimages%2F667e72041f03d045392255.jpg%3Fwidth%3D1440%26height%3D750%26fit%3Dcrop%26quality%3D85%2C90&h=rzQqwfGH_zCLJ3Sf7oZ0k8EnL92HbrwcbMAnX9WavTM=",
+    "dimensions": {
+      "largeur": 160,
+      "profondeur": 80,
+      "hauteur": 76,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 70,
+      "unite": "kg"
+    },
+    "materiau": "Bois de frêne",
+    "couleur": "Blond",
+    "marque": "NV Gallery",
+    "stock": "Livraison sous 1-2 semaines",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "bureau",
+      "bois",
+      "design"
+    ],
+    "designer": "NV Gallery"
+  },
+  {
+    "id": "SIDOT4NAGD001",
+    "nom": "Buffet Ottawa",
+    "description": "Buffet en bois blond avec pieds en fer couleur bronze brossé. Design intemporel, idéal pour un salon ou une salle à manger, offrant une grande capacité de rangement derrière ses portes.",
+    "categorie": "Buffets",
+    "prix": 1199,
+    "sourceImage": "https://www.nvgallery.com/_external/?url=https%3A%2F%2Fcdn.nvgallery.com%2Fstatic%2Fimages%2F66ba08b90478d434023429.jpg%3Fwidth%3D1440%26height%3D750%26fit%3Dcrop%26quality%3D85%2C90&h=lhXkrkcm68Og-diX0e8YWsg-JsGezKyMJgX_PQUBRaQ=",
+    "dimensions": {
+      "largeur": 160,
+      "profondeur": 50,
+      "hauteur": 81,
+      "unite": "cm"
+    },
+    "poids": {
+      "valeur": 68,
+      "unite": "kg"
+    },
+    "materiau": "Bois blond, Fer bronze",
+    "couleur": "Blond, Bronze",
+    "marque": "NV Gallery",
+    "stock": "Livraison sous 1-2 semaines",
+    "garantie": "Non spécifié",
+    "produitsAssocies": [],
+    "tags": [
+      "buffet",
+      "bois blond",
+      "bronze",
+      "rangement"
+    ],
+    "designer": "NV Gallery"
+  }
+]
 }
